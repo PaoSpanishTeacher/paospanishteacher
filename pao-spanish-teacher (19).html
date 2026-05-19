@@ -1,0 +1,1716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPLCK6RBPQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DPLCK6RBPQ');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pao Spanish Teacher — Learn Spanish Online</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --green-dark: #2d6a4f;
+      --green-mid: #52b788;
+      --green-light: #b7e4c7;
+      --pink: #e84393;
+      --pink-light: #ffd6ec;
+      --cream: #fdf6ec;
+      --cream-dark: #f5ead6;
+      --text: #2c2c2c;
+      --text-light: #6b6b6b;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(253,246,236,0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1.5px solid var(--green-light);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 5%;
+    }
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      color: var(--green-dark);
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    .nav-logo span { color: var(--pink); }
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+    .nav-links a {
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--green-dark);
+      letter-spacing: 0.5px;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--pink); }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 100px 5% 60px;
+      background: var(--cream);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -120px; right: -120px;
+      width: 520px; height: 520px;
+      border-radius: 50%;
+      background: radial-gradient(circle, var(--green-light) 0%, transparent 70%);
+      opacity: 0.5;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -80px; left: -80px;
+      width: 380px; height: 380px;
+      border-radius: 50%;
+      background: radial-gradient(circle, var(--pink-light) 0%, transparent 70%);
+      opacity: 0.6;
+    }
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-tag {
+      display: inline-block;
+      background: var(--pink-light);
+      color: var(--pink);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.4rem, 4vw, 3.6rem);
+      line-height: 1.15;
+      color: var(--green-dark);
+      margin-bottom: 20px;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--pink);
+    }
+    .hero p {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: var(--text-light);
+      margin-bottom: 36px;
+      max-width: 460px;
+    }
+    .hero-btns {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      background: var(--pink);
+      color: #fff;
+      border: none;
+      padding: 14px 30px;
+      border-radius: 50px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 18px rgba(232,67,147,0.25);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(232,67,147,0.35);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--green-dark);
+      border: 2px solid var(--green-dark);
+      padding: 12px 28px;
+      border-radius: 50px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+    .btn-outline:hover {
+      background: var(--green-dark);
+      color: #fff;
+    }
+
+    /* Hero illustration placeholder */
+    .hero-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero-img-box {
+      width: 320px;
+      height: 380px;
+      border-radius: 40% 60% 55% 45% / 45% 40% 60% 55%;
+      background: linear-gradient(135deg, var(--green-light), var(--green-mid));
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      color: var(--green-dark);
+      font-weight: 500;
+      gap: 10px;
+      border: 3px dashed var(--green-mid);
+      text-align: center;
+      padding: 20px;
+      animation: float 4s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+    .hero-img-box .emoji { font-size: 3rem; }
+
+    /* ── SECTION BASE ── */
+    section { padding: 90px 5%; }
+    .section-label {
+      font-size: 0.75rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--pink);
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      color: var(--green-dark);
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+    .section-sub {
+      font-size: 1rem;
+      color: var(--text-light);
+      line-height: 1.7;
+      max-width: 560px;
+      margin-bottom: 50px;
+    }
+    .section-center { text-align: center; }
+    .section-center .section-sub { margin: 0 auto 50px; }
+
+    /* ── NIVELES ── */
+    #niveles { background: var(--cream-dark); }
+    .levels-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 18px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .level-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 28px 20px;
+      text-align: center;
+      border: 2px solid transparent;
+      transition: all 0.25s;
+      cursor: default;
+      position: relative;
+      overflow: hidden;
+    }
+    .level-card::before {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--green-mid), var(--pink));
+      transform: scaleX(0);
+      transition: transform 0.3s;
+    }
+    .level-card:hover::before { transform: scaleX(1); }
+    .level-card:hover {
+      border-color: var(--green-light);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    }
+    .level-badge {
+      display: inline-block;
+      width: 54px; height: 54px;
+      border-radius: 50%;
+      background: var(--green-light);
+      color: var(--green-dark);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      line-height: 54px;
+      margin-bottom: 12px;
+    }
+    .level-card h3 {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+    .level-card p {
+      font-size: 0.78rem;
+      color: var(--text-light);
+      line-height: 1.5;
+    }
+    .level-card.advanced .level-badge {
+      background: var(--pink-light);
+      color: var(--pink);
+    }
+
+    /* ── CLASES ── */
+    #clases { background: var(--cream); }
+    .clases-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .clase-card {
+      background: #fff;
+      border-radius: 24px;
+      padding: 38px 34px;
+      border: 2px solid var(--green-light);
+      transition: all 0.25s;
+    }
+    .clase-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+      border-color: var(--pink-light);
+    }
+    .clase-icon {
+      font-size: 2.2rem;
+      margin-bottom: 16px;
+    }
+    .clase-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem;
+      color: var(--green-dark);
+      margin-bottom: 10px;
+    }
+    .clase-card p {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      line-height: 1.65;
+      margin-bottom: 24px;
+    }
+
+    /* ── RESERVAR ── */
+    #reservar { background: var(--cream-dark); }
+    .reservar-box {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 28px;
+      padding: 50px 48px;
+      text-align: center;
+      border: 2px solid var(--green-light);
+      box-shadow: 0 8px 40px rgba(0,0,0,0.06);
+    }
+    .reservar-box .emoji-big { font-size: 3rem; margin-bottom: 16px; display: block; }
+    .reservar-box h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      color: var(--green-dark);
+      margin-bottom: 12px;
+    }
+    .reservar-box p {
+      color: var(--text-light);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+
+    /* ── PAGO ── */
+    #pago { background: var(--cream); }
+    .pago-inner {
+      max-width: 680px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .paypal-card {
+      background: #fff;
+      border-radius: 28px;
+      padding: 44px 48px;
+      border: 2px solid var(--green-light);
+      display: inline-block;
+      width: 100%;
+    }
+    .paypal-logo {
+      font-size: 2.8rem;
+      margin-bottom: 16px;
+      display: block;
+    }
+    .paypal-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--green-dark);
+      margin-bottom: 10px;
+    }
+    .paypal-card p {
+      color: var(--text-light);
+      font-size: 0.92rem;
+      line-height: 1.65;
+      margin-bottom: 28px;
+    }
+    .btn-paypal {
+      background: #009cde;
+      color: #fff;
+      border: none;
+      padding: 14px 36px;
+      border-radius: 50px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
+      box-shadow: 0 4px 18px rgba(0,156,222,0.25);
+    }
+    .btn-paypal:hover {
+      background: #007ab8;
+      transform: translateY(-2px);
+    }
+
+    /* ── MATERIAL ── */
+    #material { background: var(--cream-dark); }
+    .material-tabs {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+    .tab-btn {
+      padding: 8px 22px;
+      border-radius: 50px;
+      border: 2px solid var(--green-light);
+      background: #fff;
+      color: var(--green-dark);
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .tab-btn.active, .tab-btn:hover {
+      background: var(--green-dark);
+      color: #fff;
+      border-color: var(--green-dark);
+    }
+    .material-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .material-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 28px 24px;
+      border: 2px solid transparent;
+      transition: all 0.25s;
+    }
+    .material-card:hover {
+      border-color: var(--pink-light);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 28px rgba(0,0,0,0.07);
+    }
+    .material-level {
+      display: inline-block;
+      background: var(--pink-light);
+      color: var(--pink);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+    }
+    .material-card h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      color: var(--green-dark);
+      margin-bottom: 8px;
+    }
+    .material-card p {
+      font-size: 0.82rem;
+      color: var(--text-light);
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+    .btn-buy {
+      display: inline-block;
+      background: var(--pink);
+      color: #fff;
+      border: none;
+      padding: 9px 22px;
+      border-radius: 50px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-buy:hover {
+      background: #c73080;
+      transform: translateY(-1px);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--green-dark);
+      color: #fff;
+      text-align: center;
+      padding: 48px 5%;
+    }
+    footer .footer-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+      color: #fff;
+    }
+    footer .footer-logo span { color: var(--pink-light); }
+    footer p {
+      font-size: 0.85rem;
+      opacity: 0.7;
+      line-height: 1.7;
+    }
+    footer .hearts { color: #ffd6ec; font-size: 1rem; margin-top: 16px; display: block; }
+
+    /* ── ANIMATIONS ── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      nav { padding: 12px 5%; }
+      .nav-links { gap: 16px; }
+      .nav-links a { font-size: 0.78rem; }
+      .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+      .hero-img { display: none; }
+      .hero { padding: 100px 5% 60px; }
+      .clases-grid { grid-template-columns: 1fr; }
+      .reservar-box, .paypal-card { padding: 36px 24px; }
+    }
+
+    .hero-illustration {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 32px;
+      box-shadow: 0 24px 60px rgba(0,0,0,0.15);
+      animation: float 4s ease-in-out infinite;
+      display: block;
+      margin: 0 auto;
+    }
+    @media (max-width: 768px) {
+      .hero-illustration { max-width: 300px; display: block; }
+      .hero-img { display: flex !important; justify-content: center; }
+    }
+
+    /* ── PRECIOS ── */
+    #precios { background: var(--cream); }
+    .precios-intro {
+      max-width: 700px;
+      margin: 0 auto 50px;
+      background: linear-gradient(135deg, var(--green-dark), #1b4332);
+      border-radius: 24px;
+      padding: 36px 40px;
+      color: #fff;
+    }
+    .precios-intro h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    .precios-intro p { font-size: 0.92rem; line-height: 1.7; opacity: 0.88; margin-bottom: 14px; }
+    .precios-intro .nivel-tags { display: flex; gap: 8px; flex-wrap: wrap; }
+    .nivel-tag {
+      background: rgba(255,255,255,0.15);
+      color: #fff;
+      font-size: 0.78rem;
+      font-weight: 500;
+      padding: 4px 14px;
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+    .includes-list {
+      list-style: none;
+      margin: 14px 0 0;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .includes-list li { font-size: 0.88rem; opacity: 0.9; }
+    .includes-list li::before { content: '✔ '; color: var(--green-light); font-weight: 700; }
+
+    .precios-block-title {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      color: var(--green-dark);
+      margin: 40px 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      justify-content: center;
+    }
+    .precios-block-title::before,
+    .precios-block-title::after {
+      content: '';
+      flex: 1;
+      max-width: 120px;
+      height: 1.5px;
+      background: var(--green-light);
+    }
+
+    .planes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto 16px;
+    }
+    .plan-card {
+      background: #fff;
+      border-radius: 22px;
+      padding: 32px 26px;
+      border: 2px solid var(--green-light);
+      transition: all 0.25s;
+      position: relative;
+      overflow: hidden;
+    }
+    .plan-card.featured {
+      border-color: var(--pink);
+      box-shadow: 0 8px 32px rgba(232,67,147,0.15);
+    }
+    .plan-card.featured::before {
+      content: '⭐ Más popular';
+      position: absolute;
+      top: 14px; right: -28px;
+      background: var(--pink);
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 500;
+      padding: 4px 36px;
+      transform: rotate(45deg);
+      letter-spacing: 0.5px;
+    }
+    .plan-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 36px rgba(0,0,0,0.09);
+    }
+    .plan-duration {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 8px;
+    }
+    .plan-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      color: var(--green-dark);
+      margin-bottom: 6px;
+    }
+    .plan-clases {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      margin-bottom: 18px;
+    }
+    .plan-price {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--pink);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .plan-price span { font-size: 1rem; font-weight: 400; color: var(--text-light); }
+    .plan-per {
+      font-size: 0.78rem;
+      color: var(--text-light);
+      margin-bottom: 22px;
+    }
+    .plan-cta {
+      display: block;
+      text-align: center;
+      background: var(--green-dark);
+      color: #fff;
+      border: none;
+      padding: 11px 20px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .plan-cta:hover { background: #1b4332; transform: translateY(-1px); }
+    .plan-card.featured .plan-cta { background: var(--pink); }
+    .plan-card.featured .plan-cta:hover { background: #c73080; }
+
+    .precios-flexibilidad {
+      max-width: 700px;
+      margin: 36px auto 0;
+      background: var(--cream-dark);
+      border-radius: 20px;
+      padding: 28px 36px;
+      border-left: 4px solid var(--green-mid);
+    }
+    .precios-flexibilidad h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      color: var(--green-dark);
+      margin-bottom: 10px;
+    }
+    .precios-flexibilidad p { font-size: 0.87rem; color: var(--text-light); line-height: 1.7; }
+
+    @media (max-width: 768px) {
+      .planes-grid { grid-template-columns: 1fr; }
+      .precios-intro { padding: 28px 24px; }
+    }
+
+    /* ── LEVEL ACCORDION ── */
+    .level-card { cursor: pointer; }
+    .level-card .level-desc { font-size: 0.78rem; color: var(--text-light); line-height: 1.5; margin-bottom: 12px; }
+    .level-toggle {
+      font-size: 0.75rem;
+      color: var(--green-mid);
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      justify-content: center;
+      margin-top: 6px;
+    }
+    .level-toggle .arrow { transition: transform 0.3s; display: inline-block; }
+    .level-card.open .level-toggle .arrow { transform: rotate(180deg); }
+    .level-drawer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+      text-align: left;
+    }
+    .level-card.open .level-drawer { max-height: 1200px; }
+    .level-drawer-inner { padding-top: 16px; border-top: 1px solid var(--green-light); margin-top: 14px; }
+    .level-mcer-desc {
+      font-size: 0.78rem;
+      color: var(--text-light);
+      line-height: 1.55;
+      margin-bottom: 14px;
+      font-style: italic;
+      padding: 10px 12px;
+      background: var(--cream-dark);
+      border-radius: 10px;
+    }
+    .unit-list { display: flex; flex-direction: column; gap: 8px; }
+    .unit-item {
+      background: var(--cream);
+      border-radius: 10px;
+      padding: 10px 14px;
+    }
+    .unit-num { font-size: 0.65rem; color: var(--text-light); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 2px; }
+    .unit-name { font-size: 0.82rem; font-weight: 500; color: var(--green-dark); }
+    .level-card.advanced .level-drawer-inner { border-color: var(--pink-light); }
+    .level-material-note {
+      font-size: 0.78rem;
+      color: var(--pink);
+      font-weight: 500;
+      margin-top: 14px;
+      padding: 8px 12px;
+      background: var(--pink-light);
+      border-radius: 10px;
+      text-align: center;
+    }
+    .level-clases-note {
+      font-size: 0.78rem;
+      color: var(--green-dark);
+      font-weight: 500;
+      margin-top: 8px;
+      padding: 8px 12px;
+      background: var(--green-light);
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .pack-includes {
+      list-style: none;
+      margin: 0 0 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .pack-includes li {
+      font-size: 0.78rem;
+      color: var(--text-light);
+      padding: 4px 8px;
+      background: var(--cream-dark);
+      border-radius: 8px;
+    }
+
+    /* ── GRUPOS ── */
+    #grupos { background: var(--cream); }
+    .grupos-coming-soon {
+      max-width: 740px;
+      margin: 0 auto 48px;
+      background: linear-gradient(135deg, #1b4332, #2d6a4f);
+      border-radius: 24px;
+      padding: 32px 40px;
+      color: #fff;
+      text-align: center;
+    }
+    .grupos-coming-soon .badge {
+      display: inline-block;
+      background: var(--pink);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 5px 16px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+    .grupos-coming-soon h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    .grupos-coming-soon p {
+      font-size: 0.92rem;
+      opacity: 0.85;
+      line-height: 1.7;
+      max-width: 500px;
+      margin: 0 auto 24px;
+    }
+    .grupos-btns {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn-form {
+      background: var(--pink);
+      color: #fff;
+      border: none;
+      padding: 13px 28px;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
+      box-shadow: 0 4px 16px rgba(232,67,147,0.3);
+    }
+    .btn-form:hover { background: #c73080; transform: translateY(-2px); }
+    .btn-wa {
+      background: #25d366;
+      color: #fff;
+      border: none;
+      padding: 13px 28px;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+    .btn-wa:hover { background: #1ebe5d; transform: translateY(-2px); }
+
+    .grupos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .grupo-card {
+      background: #fff;
+      border-radius: 22px;
+      padding: 32px 28px;
+      border: 2px solid var(--green-light);
+      transition: all 0.25s;
+      position: relative;
+      overflow: hidden;
+    }
+    .grupo-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 36px rgba(0,0,0,0.09);
+      border-color: var(--pink-light);
+    }
+    .grupo-card::after {
+      content: 'Próximamente';
+      position: absolute;
+      top: 18px; right: -30px;
+      background: var(--pink-light);
+      color: var(--pink);
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 4px 40px;
+      transform: rotate(45deg);
+    }
+    .grupo-icon { font-size: 2.4rem; margin-bottom: 14px; display: block; }
+    .grupo-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      color: var(--green-dark);
+      margin-bottom: 8px;
+    }
+    .grupo-card p {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      line-height: 1.65;
+      margin-bottom: 16px;
+    }
+    .grupo-nivel {
+      display: inline-block;
+      background: var(--green-light);
+      color: var(--green-dark);
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+    @media (max-width: 768px) {
+      .grupos-coming-soon { padding: 28px 20px; }
+      .grupos-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── MATERIAL GRATIS ── */
+    #gratis { background: var(--cream-dark); }
+    .gratis-intro {
+      max-width: 680px;
+      margin: 0 auto 48px;
+      text-align: center;
+    }
+    .gratis-tabs {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 36px;
+    }
+    .gratis-tab {
+      padding: 8px 22px;
+      border-radius: 50px;
+      border: 2px solid var(--green-light);
+      background: #fff;
+      color: var(--green-dark);
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .gratis-tab.active, .gratis-tab:hover {
+      background: var(--green-dark);
+      color: #fff;
+      border-color: var(--green-dark);
+    }
+    .gratis-nivel {
+      max-width: 960px;
+      margin: 0 auto 48px;
+    }
+    .gratis-nivel-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .gratis-nivel-badge {
+      display: inline-block;
+      width: 42px; height: 42px;
+      border-radius: 50%;
+      background: var(--green-light);
+      color: var(--green-dark);
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 42px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    .gratis-nivel-badge.advanced {
+      background: var(--pink-light);
+      color: var(--pink);
+    }
+    .gratis-nivel-title h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: var(--green-dark);
+    }
+    .gratis-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 12px;
+    }
+    .gratis-video-card {
+      background: #fff;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 2px solid var(--green-light);
+      transition: all 0.25s;
+    }
+    .gratis-video-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+    }
+    .video-thumb {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      background: #000;
+      overflow: hidden;
+    }
+    .video-thumb iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: none;
+    }
+    .gratis-video-label {
+      padding: 12px 16px;
+      font-size: 0.82rem;
+      color: var(--text-light);
+      font-weight: 500;
+    }
+    .fichas-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+      margin-top: 16px;
+    }
+    .ficha-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 18px 20px;
+      border: 2px solid var(--green-light);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      transition: all 0.2s;
+      text-decoration: none;
+    }
+    .ficha-card:hover {
+      border-color: var(--pink);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+    }
+    .ficha-icon {
+      font-size: 1.6rem;
+      flex-shrink: 0;
+    }
+    .ficha-info { flex: 1; }
+    .ficha-info span {
+      display: block;
+      font-size: 0.78rem;
+      color: var(--text-light);
+      margin-bottom: 2px;
+    }
+    .ficha-info strong {
+      font-size: 0.85rem;
+      color: var(--green-dark);
+    }
+    .ficha-download {
+      font-size: 0.75rem;
+      color: var(--pink);
+      font-weight: 600;
+    }
+    .gratis-divider {
+      border: none;
+      border-top: 1.5px solid var(--green-light);
+      margin: 36px auto;
+      max-width: 960px;
+    }
+    @media (max-width: 768px) {
+      .gratis-row { grid-template-columns: 1fr; }
+      .fichas-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── MATERIAL GRATIS ── */
+    #gratis { background: var(--cream-dark); }
+    .gratis-intro {
+      max-width: 680px;
+      margin: 0 auto 48px;
+      text-align: center;
+    }
+    .gratis-nivel-block { max-width: 960px; margin: 0 auto 48px; }
+    .gratis-nivel-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .gratis-nivel-badge {
+      display: inline-block;
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: var(--green-light);
+      color: var(--green-dark);
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 44px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    .gratis-nivel-badge.advanced { background: var(--pink-light); color: var(--pink); }
+    .gratis-nivel-title h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: var(--green-dark);
+    }
+    .gratis-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+    }
+    .gratis-card {
+      background: #fff;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 2px solid var(--green-light);
+      transition: all 0.25s;
+    }
+    .gratis-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+      border-color: var(--pink-light);
+    }
+    .gratis-video-wrap {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+      background: #000;
+    }
+    .gratis-video-wrap iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: none;
+    }
+    .gratis-card-body { padding: 16px 18px; }
+    .gratis-card-type {
+      font-size: 0.7rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--pink);
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .gratis-card-title {
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--green-dark);
+      margin-bottom: 12px;
+    }
+    .btn-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--green-dark);
+      color: #fff;
+      border: none;
+      padding: 9px 20px;
+      border-radius: 50px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-download:hover { background: #1b4332; transform: translateY(-1px); }
+    .gratis-ficha-card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 22px 20px;
+      border: 2px solid var(--green-light);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      transition: all 0.25s;
+    }
+    .gratis-ficha-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+      border-color: var(--pink-light);
+    }
+    .ficha-icon {
+      font-size: 2rem;
+      flex-shrink: 0;
+    }
+    .ficha-info { flex: 1; }
+    .ficha-info .gratis-card-type { margin-bottom: 4px; }
+    .ficha-info .gratis-card-title { margin-bottom: 10px; }
+
+    @media (max-width: 768px) {
+      .gratis-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">Pao <span>Spanish</span> Teacher</div>
+    <ul class="nav-links">
+      <li><a href="#sobre-mi">About me</a></li>
+      <li><a href="#niveles">Levels</a></li>
+      <li><a href="#clases">Classes</a></li>
+      <li><a href="#precios">Pricing</a></li>
+      <li><a href="#grupos">Groups</a></li>
+      <li><a href="#gratis">Free</a></li>
+      <li><a href="#talleres">Workshops</a></li>
+      <li><a href="#material">Shop</a></li>
+      <li><a href="#talleres">Workshops</a></li>
+      <li><a href="#reservar">Book</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO / SOBRE MÍ -->
+  <section class="hero" id="sobre-mi">
+    <div class="hero-inner">
+      <div class="hero-text fade-in">
+        <span class="hero-tag">✨ Online Spanish Teacher · ELE</span>
+        <h1>Learn Spanish with <em>Pao</em>: understand, don't memorize.</h1>
+        <p>Hi, I'm Pao — Spanish as a Foreign Language teacher with a communicative approach based on storytelling and neuroeducation. I teach online to adults at all levels, from A1 to C2. Classes that make you speak from day one. ♥</p>
+        
+      <div style="margin-top:32px; background:linear-gradient(135deg,var(--green-dark),#1b4332); border-radius:20px; padding:24px 28px; color:#fff;">
+        <div style="font-size:0.7rem; letter-spacing:1.5px; text-transform:uppercase; color:var(--green-light); font-weight:600; margin-bottom:8px;">My method · Mi método</div>
+        <div style="font-family:'Playfair Display',serif; font-size:1.15rem; color:#fff; margin-bottom:10px;">Método Español Significativo</div>
+        <p style="font-size:0.82rem; color:rgba(255,255,255,0.85); line-height:1.65; margin-bottom:0;">Comprehensible input · Storytelling · Neuroeducation · Meaningful learning. Language is acquired through emotion, context and real communication — never memorization. ♥</p>
+      </div>
+        <div class="hero-btns" style="margin-top:24px;">
+          <a href="#clases" class="btn-primary">See my classes</a>
+          <a href="#material" class="btn-outline">Educational material</a>
+        </div>
+      </div>
+      <div class="hero-img fade-in">
+        <img src="pao.png" alt="Pao Spanish Teacher" class="hero-illustration" />
+      </div>
+    </div>
+  </section>
+
+  <!-- NIVELES -->
+  <section id="niveles">
+    <div class="section-center fade-in">
+      <div class="section-label">Levels</div>
+      <h2 class="section-title">What's your level? ♥</h2>
+      <p class="section-sub">I work with all levels of the Common European Framework. Tell me where you are and I'll help you go further.</p>
+    </div>
+    <div class="levels-grid fade-in">
+
+      <!-- A1 -->
+      <div class="level-card" onclick="toggleLevel(this)">
+        <div class="level-badge">A1</div>
+        <h3>Beginner</h3>
+        <p class="level-desc">Start from scratch with solid foundations and plenty of confidence.</p>
+        <div class="level-toggle">See more <span class="arrow">▾</span></div>
+        <div class="level-drawer">
+          <div class="level-drawer-inner">
+            <div class="level-mcer-desc">El usuario A1 puede comprender y usar expresiones cotidianas básicas para satisfacer necesidades concretas.</div>
+            <a href="#material" class="level-material-note" style="display:block; text-decoration:none; cursor:pointer;">📚 Ver material disponible para este nivel →</a>
+            <div class="level-clases-note" style="background:#fff3cd; color:#856404;">ℹ️ Las clases inician desde el nivel B1</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- A2 -->
+      <div class="level-card" onclick="toggleLevel(this)">
+        <div class="level-badge">A2</div>
+        <h3>Elementary</h3>
+        <p class="level-desc">You understand some Spanish and want to communicate in everyday situations.</p>
+        <div class="level-toggle">See more <span class="arrow">▾</span></div>
+        <div class="level-drawer">
+          <div class="level-drawer-inner">
+            <div class="level-mcer-desc">El usuario A2 puede comunicarse en tareas simples y directas que requieren intercambios de información conocida.</div>
+            <a href="#material" class="level-material-note" style="display:block; text-decoration:none; cursor:pointer;">📚 Ver material disponible para este nivel →</a>
+            <div class="level-clases-note" style="background:#fff3cd; color:#856404;">ℹ️ Las clases inician desde el nivel B1</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- B1 -->
+      <div class="level-card" onclick="toggleLevel(this)">
+        <div class="level-badge">B1</div>
+        <h3>Intermediate</h3>
+        <p class="level-desc">You get by but want to gain fluency and confidence.</p>
+        <div class="level-toggle">See program <span class="arrow">▾</span></div>
+        <div class="level-drawer">
+          <div class="level-drawer-inner">
+            <div class="level-mcer-desc">El usuario B1 puede comprender los puntos principales de textos claros sobre temas conocidos, producir textos sencillos y coherentes, y describir experiencias, deseos y planes de forma articulada.</div>
+            <div class="unit-list">
+              <div class="unit-item"><div class="unit-num">Unidad 01</div><div class="unit-name">Experiencias y recuerdos</div></div>
+              <div class="unit-item"><div class="unit-num">Unidad 02</div><div class="unit-name">Historias y narrativa</div></div>
+              <div class="unit-item"><div class="unit-num">Unidad 03</div><div class="unit-name">Planes y proyectos de futuro</div></div>
+              <div class="unit-item"><div class="unit-num">Unidad 04</div><div class="unit-name">Deseos, emociones y dudas</div></div>
+              <div class="unit-item"><div class="unit-num">Unidad 05</div><div class="unit-name">Consejos y recomendaciones</div></div>
+              <div class="unit-item"><div class="unit-num">Unidad 06</div><div class="unit-name">Opiniones y argumentos</div></div>
+              <div class="unit-item"><div class="unit-num">Unidad 07</div><div class="unit-name">Descripción y contexto social</div></div>
+              <div class="unit-item"><div class="unit-num">Unidad 08</div><div class="unit-name">Lenguaje formal e informal</div></div>
+            </div>
+            <div class="level-material-note">📚 Material + classes available</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- B2 -->
+      <div class="level-card" onclick="toggleLevel(this)">
+        <div class="level-badge">B2</div>
+        <h3>Intermediate alto</h3>
+        <p class="level-desc">You speak well and are looking for precision, nuance and naturalness.</p>
+        <div class="level-toggle">See program <span class="arrow">▾</span></div>
+        <div class="level-drawer">
+          <div class="level-drawer-inner">
+            <div class="level-mcer-desc">El usuario B2 puede entender las ideas principales de textos complejos sobre temas concretos y abstractos, producir textos claros y detallados, y expresarse con fluidez y espontaneidad.</div>
+            <div class="unit-list">
+              <div class="unit-item"><div class="unit-num">Unidad 01</div><div class="unit-name">Argumentación y opinión</div></div>
+              <div class="unit-item"><div class="unit-num">Unidad 02</div><div class="unit-name">Narración y precisión temporal</div></div>
+              <div class="unit-item"><div class="unit-num">Unidad 03</div><div class="unit-name">Hipótesis y situaciones irreales</div></div>
+              <div class="unit-item"><div class="unit-num">Unidad 04</div><div class="unit-name">El subjuntivo: deseo, duda y valoración</div></div>
+              <div class="unit-item"><div class="unit-num">Unidad 05</div><div class="unit-name">Discurso referido y reformulación</div></div>
+              <div class="unit-item"><div class="unit-num">Unidad 06</div><div class="unit-name">Voz pasiva y registro formal</div></div>
+              <div class="unit-item"><div class="unit-num">Unidad 07</div><div class="unit-name">Concesión, contraste y matiz</div></div>
+              <div class="unit-item"><div class="unit-num">Unidad 08</div><div class="unit-name">Fluidez, cohesión y proyección al C1</div></div>
+            </div>
+            <div class="level-material-note">📚 Material + classes available</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- C1 -->
+      <div class="level-card advanced" onclick="toggleLevel(this)">
+        <div class="level-badge">C1</div>
+        <h3>Advanced</h3>
+        <p class="level-desc">You master the language and want to perfect every detail.</p>
+        <div class="level-toggle">See program <span class="arrow">▾</span></div>
+        <div class="level-drawer">
+          <div class="level-drawer-inner">
+            <div class="level-mcer-desc">El usuario C1 puede comprender textos extensos y exigentes, expresarse con fluidez y espontaneidad sin esfuerzo aparente, y usar el idioma de forma flexible y eficaz para fines sociales, académicos y profesionales.</div>
+            <div class="unit-list">
+              <div class="unit-item"><div class="unit-num">Unidad 01</div><div class="unit-name">Matices en la expresión de opiniones</div></div>
+              <div class="unit-item"><div class="unit-num">Unidad 02</div><div class="unit-name">Discurso referido y reformulación</div></div>
+              <div class="unit-item"><div class="unit-num">Unidad 03</div><div class="unit-name">Estructuras complejas y cohesión textual</div></div>
+              <div class="unit-item"><div class="unit-num">Unidad 04</div><div class="unit-name">Hipótesis y condiciones irreales</div></div>
+              <div class="unit-item"><div class="unit-num">Unidad 05</div><div class="unit-name">Registro y variación lingüística</div></div>
+              <div class="unit-item"><div class="unit-num">Unidad 06</div><div class="unit-name">Persuasión y argumentación avanzada</div></div>
+              <div class="unit-item"><div class="unit-num">Unidad 07</div><div class="unit-name">Comprensión y producción de textos complejos</div></div>
+              <div class="unit-item"><div class="unit-num">Unidad 08</div><div class="unit-name">Fluidez y precisión en la interacción</div></div>
+            </div>
+            <div class="level-material-note">📚 Material + classes available</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- C2 -->
+      <div class="level-card advanced" onclick="toggleLevel(this)">
+        <div class="level-badge">C2</div>
+        <h3>Mastery</h3>
+        <p class="level-desc">Near-native level. We refine the most sophisticated use together.</p>
+        <div class="level-toggle">See program <span class="arrow">▾</span></div>
+        <div class="level-drawer">
+          <div class="level-drawer-inner">
+            <div class="level-mcer-desc">El usuario C2 puede comprender sin esfuerzo prácticamente todo lo que oye o lee, expresarse de forma espontánea, fluida y precisa, y distinguir matices de significado incluso en situaciones de alta complejidad.</div>
+            <div class="unit-list">
+              <div class="unit-item"><div class="unit-num">Unidad 01</div><div class="unit-name">Precisión y matices en el discurso</div></div>
+              <div class="unit-item"><div class="unit-num">Unidad 02</div><div class="unit-name">Discurso avanzado y reformulación experta</div></div>
+              <div class="unit-item"><div class="unit-num">Unidad 03</div><div class="unit-name">Cohesión, coherencia y sofisticación textual</div></div>
+              <div class="unit-item"><div class="unit-num">Unidad 04</div><div class="unit-name">Argumentación crítica y retórica</div></div>
+              <div class="unit-item"><div class="unit-num">Unidad 05</div><div class="unit-name">Variación lingüística y pragmática</div></div>
+              <div class="unit-item"><div class="unit-num">Unidad 06</div><div class="unit-name">Interpretación y producción de textos complejos</div></div>
+              <div class="unit-item"><div class="unit-num">Unidad 07</div><div class="unit-name">Fluidez total y control del lenguaje</div></div>
+              <div class="unit-item"><div class="unit-num">Unidad 08</div><div class="unit-name">Competencia global y dominio del idioma</div></div>
+            </div>
+            <div class="level-material-note">📚 Material + classes available</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CLASES -->
+  <section id="clases">
+    <div class="section-center fade-in">
+      <div class="section-label">Classes</div>
+      <h2 class="section-title">Choose how you want to learn ♥</h2>
+      <p class="section-sub">Online, flexible classes with a 100% communicative approach. You choose: one-on-one or group.</p>
+    </div>
+    <div class="clases-grid fade-in">
+      <div class="clase-card">
+        <div class="clase-icon">🌿</div>
+        <h3>One-on-One Classes</h3>
+        <p>1-to-1 sessions tailored to your level, pace and goals. You progress faster with fully personalized attention.</p>
+        <a href="#precios" class="btn-primary">See plans & prices</a>
+      </div>
+      <div class="clase-card">
+        <div class="clase-icon">🌸</div>
+        <h3>Group Classes</h3>
+        <p>Learn with others in a dynamic and fun environment. Practice real conversation and make friends along the way.</p>
+        <a href="#grupos" class="btn-primary">See conversation groups</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PRECIOS -->
+  <section id="precios">
+    <div class="section-center fade-in">
+      <div class="section-label">Pricing</div>
+      <h2 class="section-title">Class plans ♥</h2>
+      <p class="section-sub">Learn Spanish through stories, context and natural repetition. You won't memorize isolated words — you'll learn to understand and use Spanish in a real way.</p>
+    </div>
+
+    <div class="precios-intro fade-in">
+      <h3>✨ What does each class include?</h3>
+      <ul class="includes-list">
+        <li>Live interactive class</li>
+        <li>Story designed to learn Spanish in context</li>
+        <li>Grammar worksheet on the topic studied</li>
+        <li>Comprehension and conversation practice</li>
+        <li>Support material to keep practicing after class</li>
+      </ul>
+      <div style="margin-top:18px;">
+        <p style="margin-bottom:8px; font-size:0.82rem; opacity:0.7;">🎓 Available levels:</p>
+        <div class="nivel-tags">
+          <span class="nivel-tag">B1</span>
+          <span class="nivel-tag">B2</span>
+          <span class="nivel-tag">C1</span>
+          <span class="nivel-tag">C2</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="precios-block-title fade-in">⏰ 60-minute Classes</div>
+    <div class="planes-grid fade-in">
+      <div class="plan-card">
+        <div class="plan-duration">60 min / clase</div>
+        <div class="plan-name">Plan Elementary</div>
+        <div class="plan-clases">4 clases</div>
+        <div class="plan-price">$80 <span>USD</span></div>
+        <div class="plan-per">$20 per class</div>
+        <a href="#reservar" class="plan-cta">I want this plan</a>
+      </div>
+      <div class="plan-card featured">
+        <div class="plan-duration">60 min / clase</div>
+        <div class="plan-name">Plan Intermediate</div>
+        <div class="plan-clases">8 clases</div>
+        <div class="plan-price">$150 <span>USD</span></div>
+        <div class="plan-per">$18.75 per class</div>
+        <a href="#reservar" class="plan-cta">I want this plan</a>
+      </div>
+      <div class="plan-card">
+        <div class="plan-duration">60 min / clase</div>
+        <div class="plan-name">Intensive Plan</div>
+        <div class="plan-clases">12 clases</div>
+        <div class="plan-price">$210 <span>USD</span></div>
+        <div class="plan-per">$17.50 per class</div>
+        <a href="#reservar" class="plan-cta">I want this plan</a>
+      </div>
+    </div>
+
+    <div class="precios-block-title fade-in">⚡ 30-minute Classes</div>
+    <div class="planes-grid fade-in" style="max-width:620px;">
+      <div class="plan-card">
+        <div class="plan-duration">30 min / clase</div>
+        <div class="plan-name">Conversation Plan</div>
+        <div class="plan-clases">4 clases</div>
+        <div class="plan-price">$45 <span>USD</span></div>
+        <div class="plan-per">$11.25 per class</div>
+        <a href="#reservar" class="plan-cta">I want this plan</a>
+      </div>
+      <div class="plan-card">
+        <div class="plan-duration">30 min / clase</div>
+        <div class="plan-name">Intensive Practice Plan</div>
+        <div class="plan-clases">8 clases</div>
+        <div class="plan-price">$80 <span>USD</span></div>
+        <div class="plan-per">$10 per class</div>
+        <a href="#reservar" class="plan-cta">I want this plan</a>
+      </div>
+    </div>
+
+    <div class="precios-flexibilidad fade-in">
+      <h4>📅 Full flexibility</h4>
+      <p>Use your classes according to your availability. Take several classes in one week, or spread them over several weeks. You decide the pace. ♥</p>
+    </div>
+  </section>
+
+
+
+  <!-- GRATIS -->
+  <section id="gratis" style="background: var(--cream-dark); padding: 90px 5%;">
+    <div class="section-center fade-in">
+      <div class="section-label">100% Free</div>
+      <h2 class="section-title">Try before you buy ♥</h2>
+      <p class="section-sub" style="margin: 0 auto 50px;">Free resources so you can experience my teaching method. If you like what you see, there's much more waiting for you. 🌿</p>
+    </div>
+    <div class="fade-in" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; max-width: 900px; margin: 0 auto;">
+
+      <a href="https://paospanishteacher.github.io/Videos-cuentos/" target="_blank" style="text-decoration:none;">
+        <div style="background:#fff; border-radius:24px; padding:36px 28px; border:2px solid var(--green-light); text-align:center; transition:all 0.25s;" onmouseover="this.style.transform='translateY(-5px)';this.style.borderColor='var(--pink-light)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='var(--green-light)'">
+          <div style="font-size:2.8rem; margin-bottom:14px;">🎬</div>
+          <div style="font-size:0.7rem; letter-spacing:1.5px; text-transform:uppercase; color:var(--pink); font-weight:600; margin-bottom:8px;">Free Videos</div>
+          <h3 style="font-family:'Playfair Display',serif; font-size:1.2rem; color:var(--green-dark); margin-bottom:10px;">Spanish Stories</h3>
+          <p style="font-size:0.85rem; color:var(--text-light); line-height:1.65; margin-bottom:20px;">Short story videos to learn Spanish naturally by level — no memorization, just understanding. ♥</p>
+          <span style="display:inline-block; background:var(--green-dark); color:#fff; padding:10px 24px; border-radius:50px; font-size:0.85rem; font-weight:500;">Watch free videos →</span>
+        </div>
+      </a>
+
+      <a href="https://paospanishteacher.github.io/juegos-interactivos/" target="_blank" style="text-decoration:none;">
+        <div style="background:#fff; border-radius:24px; padding:36px 28px; border:2px solid var(--green-light); text-align:center; transition:all 0.25s;" onmouseover="this.style.transform='translateY(-5px)';this.style.borderColor='var(--pink-light)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='var(--green-light)'">
+          <div style="font-size:2.8rem; margin-bottom:14px;">🎮</div>
+          <div style="font-size:0.7rem; letter-spacing:1.5px; text-transform:uppercase; color:var(--pink); font-weight:600; margin-bottom:8px;">Free Games</div>
+          <h3 style="font-family:'Playfair Display',serif; font-size:1.2rem; color:var(--green-dark); margin-bottom:10px;">Interactive Games</h3>
+          <p style="font-size:0.85rem; color:var(--text-light); line-height:1.65; margin-bottom:20px;">16 interactive games organized by level. Practice vocabulary and grammar while having fun. ♥</p>
+          <span style="display:inline-block; background:var(--green-dark); color:#fff; padding:10px 24px; border-radius:50px; font-size:0.85rem; font-weight:500;">Play free games →</span>
+        </div>
+      </a>
+
+      <a href="https://paospanishteacher.github.io/infografias-gramaticales/" target="_blank" style="text-decoration:none;">
+        <div style="background:#fff; border-radius:24px; padding:36px 28px; border:2px solid var(--green-light); text-align:center; transition:all 0.25s;" onmouseover="this.style.transform='translateY(-5px)';this.style.borderColor='var(--pink-light)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='var(--green-light)'">
+          <div style="font-size:2.8rem; margin-bottom:14px;">📄</div>
+          <div style="font-size:0.7rem; letter-spacing:1.5px; text-transform:uppercase; color:var(--pink); font-weight:600; margin-bottom:8px;">Free Infographics</div>
+          <h3 style="font-family:'Playfair Display',serif; font-size:1.2rem; color:var(--green-dark); margin-bottom:10px;">Grammar Infographics</h3>
+          <p style="font-size:0.85rem; color:var(--text-light); line-height:1.65; margin-bottom:20px;">Visual grammar references from A1 to C2. Download them, save them and study at your own pace. ♥</p>
+          <span style="display:inline-block; background:var(--green-dark); color:#fff; padding:10px 24px; border-radius:50px; font-size:0.85rem; font-weight:500;">Download free →</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+    <!-- GRUPOS -->
+  <section id="grupos" style="background: var(--cream); padding: 90px 5%;">
+    <div class="section-center fade-in">
+      <div class="section-label">Conversation Groups</div>
+      <h2 class="section-title">Learn with others ♥</h2>
+      <p class="section-sub">Thematic groups for C1 and C2 levels. Real conversation about topics that matter — not just grammar.</p>
+    </div>
+
+    <div style="max-width: 740px; margin: 0 auto 48px; background: linear-gradient(135deg, #1b4332, #2d6a4f); border-radius: 24px; padding: 32px 40px; color: #fff; text-align: center;" class="fade-in">
+      <span style="display:inline-block; background:var(--pink); color:#fff; font-size:0.72rem; font-weight:500; letter-spacing:1.5px; text-transform:uppercase; padding:5px 16px; border-radius:20px; margin-bottom:16px;">🔜 Coming Soon · Próximamente</span>
+      <h3 style="font-family:'Playfair Display',serif; font-size:1.5rem; margin-bottom:10px; color:#fff;">Groups are opening soon!</h3>
+      <p style="font-size:0.92rem; opacity:0.85; line-height:1.7; max-width:500px; margin:0 auto 24px;">No confirmed date yet, but you can register your interest now and be among the first to be notified when we open. ♥</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-pEgClR_C8lml93jUyx3-o3IhIhcAUEwPz5i5imTuEsFixg/viewform?usp=publish-editor" target="_blank" style="display:inline-block; background:var(--pink); color:#fff; padding:13px 28px; border-radius:50px; font-size:0.9rem; font-weight:500; text-decoration:none; box-shadow:0 4px 16px rgba(232,67,147,0.3);">📋 Notify me when available</a>
+    </div>
+
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:22px; max-width:900px; margin:0 auto;" class="fade-in">
+      <div style="background:#fff; border-radius:22px; padding:32px 28px; border:2px solid var(--green-light); transition:all 0.25s; position:relative; overflow:hidden;" onmouseover="this.style.transform='translateY(-4px)';this.style.borderColor='var(--pink-light)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='var(--green-light)'">
+        <div style="position:absolute; top:14px; right:-28px; background:var(--pink-light); color:var(--pink); font-size:0.65rem; font-weight:600; letter-spacing:1px; text-transform:uppercase; padding:4px 40px; transform:rotate(45deg);">Coming soon</div>
+        <div style="font-size:2.4rem; margin-bottom:14px;"><img src="https://flagcdn.com/w80/co.png" alt="Colombia" style="width:52px; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.15);"></div>
+        <h3 style="font-family:'Playfair Display',serif; font-size:1.15rem; color:var(--green-dark); margin-bottom:8px;">Colombian Paisa Culture</h3>
+        <p style="font-size:0.85rem; color:var(--text-light); line-height:1.65; margin-bottom:16px;">Expressions, stories, customs, music and gastronomy from Antioquia. Immerse yourself in paisa culture while practicing real Spanish.</p>
+        <span style="display:inline-block; background:var(--green-light); color:var(--green-dark); font-size:0.72rem; font-weight:600; padding:4px 12px; border-radius:20px;">C1 · C2</span>
+      </div>
+      <div style="background:#fff; border-radius:22px; padding:32px 28px; border:2px solid var(--green-light); transition:all 0.25s; position:relative; overflow:hidden;" onmouseover="this.style.transform='translateY(-4px)';this.style.borderColor='var(--pink-light)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='var(--green-light)'">
+        <div style="position:absolute; top:14px; right:-28px; background:var(--pink-light); color:var(--pink); font-size:0.65rem; font-weight:600; letter-spacing:1px; text-transform:uppercase; padding:4px 40px; transform:rotate(45deg);">Coming soon</div>
+        <div style="font-size:2.4rem; margin-bottom:14px;">🎬</div>
+        <h3 style="font-family:'Playfair Display',serif; font-size:1.15rem; color:var(--green-dark); margin-bottom:8px;">Spanish through Cinema</h3>
+        <p style="font-size:0.85rem; color:var(--text-light); line-height:1.65; margin-bottom:16px;">Analysis of Spanish-language films and series. Learn vocabulary, expressions and culture through stories that hook you.</p>
+        <span style="display:inline-block; background:var(--green-light); color:var(--green-dark); font-size:0.72rem; font-weight:600; padding:4px 12px; border-radius:20px;">C1 · C2</span>
+      </div>
+      <div style="background:#fff; border-radius:22px; padding:32px 28px; border:2px solid var(--green-light); transition:all 0.25s; position:relative; overflow:hidden;" onmouseover="this.style.transform='translateY(-4px)';this.style.borderColor='var(--pink-light)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='var(--green-light)'">
+        <div style="position:absolute; top:14px; right:-28px; background:var(--pink-light); color:var(--pink); font-size:0.65rem; font-weight:600; letter-spacing:1px; text-transform:uppercase; padding:4px 40px; transform:rotate(45deg);">Coming soon</div>
+        <div style="font-size:2.4rem; margin-bottom:14px;">📚</div>
+        <h3 style="font-family:'Playfair Display',serif; font-size:1.15rem; color:var(--green-dark); margin-bottom:8px;">Reading Club — Spanish & Personal Growth</h3>
+        <p style="font-size:0.85rem; color:var(--text-light); line-height:1.65; margin-bottom:16px;">Short texts about self-love, philosophy and life. Learn Spanish and grow on the inside at the same time. ♥</p>
+        <span style="display:inline-block; background:var(--green-light); color:var(--green-dark); font-size:0.72rem; font-weight:600; padding:4px 12px; border-radius:20px;">C1 · C2</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TALLERES -->
+  <section id="talleres" style="background: var(--cream-dark); padding: 90px 5%;">
+    <div class="section-center fade-in">
+      <div class="section-label">Workshops · Talleres</div>
+      <h2 class="section-title">AI Workshops · Talleres de IA ♥</h2>
+      <div style="max-width:700px; margin:0 auto 48px; text-align:center;">
+        <p style="font-size:1rem; color:var(--text-light); line-height:1.75; margin-bottom:12px;">
+          <strong style="color:var(--green-dark);">For Spanish ELE teachers, content creators and anyone who wants to learn AI from scratch.</strong><br>100% basic · No experience needed · Online live sessions
+        </p>
+        <p style="font-size:0.95rem; color:var(--text-light); line-height:1.75;">
+          <strong style="color:var(--green-dark);">Para profesores de Español ELE, creadores de contenido y todo aquel que quiera aprender IA desde cero.</strong><br>100% básico · Sin experiencia previa · Clases online en vivo
+        </p>
+      </div>
+    </div>
+    <div class="fade-in" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:24px; max-width:960px; margin:0 auto 36px;">
+      <div style="background:#fff; border-radius:24px; overflow:hidden; border:2px solid var(--green-light); transition:all 0.25s;" onmouseover="this.style.transform='translateY(-4px)';this.style.borderColor='var(--pink-light)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='var(--green-light)'">
+        <div style="background:linear-gradient(135deg,#fef3c7,#fde68a); padding:20px; text-align:center;"><span style="font-size:2rem;">🎬</span><div style="font-size:0.72rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:#92400e; margin-top:6px;">Workshop 1 · Taller 1</div></div>
+        <div style="padding:24px;">
+          <h3 style="font-family:'Playfair Display',serif; font-size:1.1rem; color:var(--green-dark); margin-bottom:8px;">Create Story Videos with AI<br><span style="font-size:0.9rem; color:var(--text-light);">Crea Videos de Cuentos con IA</span></h3>
+          <p style="font-size:0.82rem; color:var(--text-light); line-height:1.6; margin-bottom:16px;">2 live classes · 2 hrs each · Online</p>
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span style="font-family:'Playfair Display',serif; font-size:1.8rem; color:var(--pink); font-weight:700;">$10</span>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=pzabalamcc@gmail.com" target="_blank" style="background:var(--pink); color:#fff; padding:10px 20px; border-radius:50px; font-size:0.82rem; font-weight:500; text-decoration:none;">Register →</a>
+          </div>
+        </div>
+      </div>
+      <div style="background:#fff; border-radius:24px; overflow:hidden; border:2px solid var(--green-light); transition:all 0.25s;" onmouseover="this.style.transform='translateY(-4px)';this.style.borderColor='var(--pink-light)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='var(--green-light)'">
+        <div style="background:linear-gradient(135deg,#ede9fe,#ddd6fe); padding:20px; text-align:center;"><span style="font-size:2rem;">🖼️</span><div style="font-size:0.72rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:#5b21b6; margin-top:6px;">Workshop 2 · Taller 2</div></div>
+        <div style="padding:24px;">
+          <h3 style="font-family:'Playfair Display',serif; font-size:1.1rem; color:var(--green-dark); margin-bottom:8px;">Create Images with AI from Scratch<br><span style="font-size:0.9rem; color:var(--text-light);">Crea Imágenes con IA desde Cero</span></h3>
+          <p style="font-size:0.82rem; color:var(--text-light); line-height:1.6; margin-bottom:16px;">2 live classes · 2 hrs each · Online</p>
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span style="font-family:'Playfair Display',serif; font-size:1.8rem; color:var(--pink); font-weight:700;">$10</span>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=pzabalamcc@gmail.com" target="_blank" style="background:var(--pink); color:#fff; padding:10px 20px; border-radius:50px; font-size:0.82rem; font-weight:500; text-decoration:none;">Register →</a>
+          </div>
+        </div>
+      </div>
+      <div style="background:#fff; border-radius:24px; overflow:hidden; border:2px solid var(--green-light); transition:all 0.25s;" onmouseover="this.style.transform='translateY(-4px)';this.style.borderColor='var(--pink-light)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='var(--green-light)'">
+        <div style="background:linear-gradient(135deg,var(--pink-light),#fecdd3); padding:20px; text-align:center;"><span style="font-size:2rem;">🎮</span><div style="font-size:0.72rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:#be185d; margin-top:6px;">Workshop 3 · Taller 3</div></div>
+        <div style="padding:24px;">
+          <h3 style="font-family:'Playfair Display',serif; font-size:1.1rem; color:var(--green-dark); margin-bottom:8px;">Create Interactive Games with AI<br><span style="font-size:0.9rem; color:var(--text-light);">Crea Juegos Interactivos con IA</span></h3>
+          <p style="font-size:0.82rem; color:var(--text-light); line-height:1.6; margin-bottom:16px;">2 live classes · 2 hrs each · Online</p>
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span style="font-family:'Playfair Display',serif; font-size:1.8rem; color:var(--pink); font-weight:700;">$10</span>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=pzabalamcc@gmail.com" target="_blank" style="background:var(--pink); color:#fff; padding:10px 20px; border-radius:50px; font-size:0.82rem; font-weight:500; text-decoration:none;">Register →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fade-in" style="text-align:center;">
+      <a href="https://paospanishteacher.github.io/Cursos-online/" target="_blank" style="display:inline-block; background:var(--green-dark); color:#fff; padding:14px 32px; border-radius:50px; font-size:0.95rem; font-weight:500; text-decoration:none;">See full workshop details · Ver detalles completos →</a>
+    </div>
+    <div class="fade-in" style="text-align:center; margin-top:40px;">
+      <a href="https://paospanishteacher.github.io/Cursos-online/" target="_blank" style="display:inline-flex; align-items:center; gap:8px; background:var(--pink); color:#fff; padding:14px 36px; border-radius:50px; font-size:0.95rem; font-weight:500; text-decoration:none; box-shadow:0 4px 18px rgba(232,67,147,0.3); transition:all 0.2s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
+        🎓 Ver más información · See more info →
+      </a>
+    </div>
+  </section>
+
+  <!-- RESERVAR -->
+  <section id="reservar" style="background: var(--cream); padding: 90px 5%;">
+    <div style="max-width: 680px; margin: 0 auto; background: #fff; border-radius: 28px; padding: 50px 48px; text-align: center; border: 2px solid var(--green-light); box-shadow: 0 8px 40px rgba(0,0,0,0.06);" class="fade-in">
+      <span style="font-size:3rem; margin-bottom:16px; display:block;">📅</span>
+      <h3 style="font-family:'Playfair Display',serif; font-size:1.6rem; color:var(--green-dark); margin-bottom:12px;">Book your class</h3>
+      <p style="color:var(--text-light); font-size:0.95rem; line-height:1.7; margin-bottom:32px;">Choose the day and time that works best for you. My calendar is always up to date — easy and quick. ♥</p>
+      <a href="https://calendar.app.google/osyV42d6JhPrmQUC7" class="btn-primary" target="_blank" style="display:inline-block; background:var(--pink); color:#fff; padding:14px 30px; border-radius:50px; font-size:0.95rem; font-weight:500; text-decoration:none;">Check availability & book</a>
+    </div>
+  </section>
+
+  <!-- PAGO -->
+  <section id="pago" style="background: var(--cream-dark); padding: 90px 5%;">
+    <div style="max-width: 680px; margin: 0 auto; text-align:center;">
+      <div style="font-size:0.75rem; letter-spacing:2px; text-transform:uppercase; color:var(--pink); font-weight:600; margin-bottom:10px; text-align:center;">Payments</div>
+      <h2 style="font-family:'Playfair Display',serif; font-size:2.2rem; color:var(--green-dark); margin-bottom:16px; text-align:center;">Easy & secure payment ♥</h2>
+      <p style="font-size:1rem; color:var(--text-light); line-height:1.7; max-width:560px; margin:0 auto 36px; text-align:center;">Pay for your classes or materials directly via PayPal, quickly and securely.</p>
+      <div style="background:#fff; border-radius:28px; padding:44px 48px; border:2px solid var(--green-light); display:inline-block; width:100%;" class="fade-in">
+        <span style="font-size:2.8rem; margin-bottom:16px; display:block;">💳</span>
+        <h3 style="font-family:'Playfair Display',serif; font-size:1.5rem; color:var(--green-dark); margin-bottom:10px;">Pay with PayPal</h3>
+        <p style="color:var(--text-light); font-size:0.92rem; line-height:1.65; margin-bottom:28px;">I accept payments in any currency. You'll receive immediate confirmation and I'll get in touch with you right away.</p>
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=pzabalamcc@gmail.com" class="btn-paypal" target="_blank" style="display:inline-block; background:#009cde; color:#fff; padding:14px 36px; border-radius:50px; font-size:0.95rem; font-weight:500; text-decoration:none;">Go to PayPal ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MATERIAL -->
+  <section id="material" style="background: var(--cream); padding: 90px 5%;">
+    <div class="section-center fade-in">
+      <div class="section-label">Shop</div>
+      <h2 class="section-title">Educational resources ♥</h2>
+      <p class="section-sub">Digital resources designed by me so you can keep learning at your own pace. Filter by level and find what you need.</p>
+    </div>
+    <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin-bottom:40px;" class="fade-in">
+      <button class="tab-btn active" onclick="document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));this.classList.add('active')">All</button>
+      <button class="tab-btn" onclick="document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));this.classList.add('active')">A1</button>
+      <button class="tab-btn" onclick="document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));this.classList.add('active')">A2</button>
+      <button class="tab-btn" onclick="document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));this.classList.add('active')">B1</button>
+      <button class="tab-btn" onclick="document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));this.classList.add('active')">B2</button>
+      <button class="tab-btn" onclick="document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));this.classList.add('active')">C1</button>
+      <button class="tab-btn" onclick="document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));this.classList.add('active')">C2</button>
+    </div>
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:20px; max-width:960px; margin:0 auto;" class="fade-in">
+      <div class="material-card"><span class="material-level">A1</span><h4>Pack A1</h4><p>Essential vocabulary, pronunciation and first phrases to communicate from day 1.</p><ul class="pack-includes"><li>🎬 Story videos</li><li>📄 Grammar sheets PDF</li><li>🖨️ Printables</li><li>⚡ Interactive activities</li></ul><a href="https://paospanishteacher.gumroad.com/?section=HbFVwH_2O3xOwBhBP5NeeQ==#HbFVwH_2O3xOwBhBP5NeeQ==" class="btn-buy" target="_blank">Buy ♥</a></div>
+      <div class="material-card"><span class="material-level">A2</span><h4>Pack A2</h4><p>Everyday conversations, key verbs and real situations to get by.</p><ul class="pack-includes"><li>🎬 Story videos</li><li>📄 Grammar sheets PDF</li><li>🖨️ Printables</li><li>⚡ Interactive activities</li></ul><a href="https://paospanishteacher.gumroad.com/?section=xjYaYt67cyBUEsl137-vpg==#xjYaYt67cyBUEsl137-vpg==" class="btn-buy" target="_blank">Buy ♥</a></div>
+      <div class="material-card"><span class="material-level">B1</span><h4>Pack B1</h4><p>Advanced grammar, fluency and speaking practice to jump to the next level.</p><ul class="pack-includes"><li>🎬 Story videos</li><li>📄 Grammar sheets PDF</li><li>🖨️ Printables</li><li>⚡ Interactive activities</li></ul><a href="https://paospanishteacher.gumroad.com/?section=U-XG9PIZ7ROQge2cY7fzhg==#U-XG9PIZ7ROQge2cY7fzhg==" class="btn-buy" target="_blank">Buy ♥</a></div>
+      <div class="material-card"><span class="material-level">B2</span><h4>Pack B2</h4><p>Nuances, subjunctive, connectors and resources to speak more naturally.</p><ul class="pack-includes"><li>🎬 Story videos</li><li>📄 Grammar sheets PDF</li><li>🖨️ Printables</li><li>⚡ Interactive activities</li></ul><a href="https://paospanishteacher.gumroad.com/?section=5zFkMtYzXLDFjc4VX-SCKw==#5zFkMtYzXLDFjc4VX-SCKw==" class="btn-buy" target="_blank">Buy ♥</a></div>
+      <div class="material-card"><span class="material-level">C1</span><h4>Pack C1</h4><p>Sophisticated expression, complex texts and mastery of formal and informal register.</p><ul class="pack-includes"><li>🎬 Story videos</li><li>📄 Grammar sheets PDF</li><li>🖨️ Printables</li><li>⚡ Interactive activities</li></ul><a href="https://paospanishteacher.gumroad.com/?section=vhuvL7Fjcl-jG9alXvxqgw==#vhuvL7Fjcl-jG9alXvxqgw==" class="btn-buy" target="_blank">Buy ♥</a></div>
+      <div class="material-card"><span class="material-level">C2</span><h4>Pack C2</h4><p>Near-native level refinement: style, precision and lexical richness.</p><ul class="pack-includes"><li>🎬 Story videos</li><li>📄 Grammar sheets PDF</li><li>🖨️ Printables</li><li>⚡ Interactive activities</li></ul><a href="https://paospanishteacher.gumroad.com/?section=9X2ZWALxPTccEIRhQUWLnw==#9X2ZWALxPTccEIRhQUWLnw==" class="btn-buy" target="_blank">Buy ♥</a></div>
+    </div>
+  </section>
+
+  <footer style="background:var(--green-dark); color:#fff; text-align:center; padding:48px 5%;">
+    <div style="font-family:'Playfair Display',serif; font-size:1.5rem; margin-bottom:12px;">Pao <span style="color:var(--pink-light);">Spanish</span> Teacher</div>
+    <p style="font-size:0.85rem; opacity:0.7; line-height:1.7;">Online Spanish classes for adults · All levels A1–C2<br>Communicative approach, storytelling & neuroeducation</p>
+    <span style="color:var(--pink-light); font-size:1rem; margin-top:16px; display:block;">♥ ♥ ♥</span>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+
+    function toggleLevel(card) {
+      card.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
